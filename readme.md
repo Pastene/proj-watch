@@ -2,4 +2,7 @@
 
 ## Instalando dependencias
 
-<p>Para instalar as dependencias é preciso instalar o NodeJS em sua máquina e rodar o comando: npm i</p>
+<ul>
+    <li>Instale o <b>NodeJS</b></li>
+    <li>Rode dentro do diretório o comando: <b>npm i</b></li>
+</ul>
