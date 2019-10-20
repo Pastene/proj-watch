@@ -35,7 +35,7 @@ const watch = () => {
 
     gulp.watch("src/scss/**/*.scss").on("change", gulp.parallel(style, browserSync.reload));
     gulp.watch("src/js/**/*.js").on("change", gulp.parallel(js, browserSync.reload));
-    gulp.watch("./index.html").on("change", browserSync.reload);
+    gulp.watch("./*.html").on("change", browserSync.reload);
 }
 
 exports.watch = watch;

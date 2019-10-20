@@ -1,0 +1,43 @@
+.container_cadastro{
+    h1{
+        color: #fff;
+        margin: 1rem;
+    }
+    &_campos{
+        margin: 1rem 0 0 1rem;
+        &_contentCampo{
+            display: flex;
+            flex-direction: column;
+            margin: 2rem 0;
+            width: 300px;
+            label{
+                color: #fff;
+            }
+            input{
+                margin-top: .5rem;
+                padding-left: .5rem;
+                padding: 5px 10px;
+                border: none;
+                border-radius: 3px;
+            }
+            &-dados{
+                display: flex;
+                input{
+                    width: 30%;
+                    margin-right: .5rem;
+                }
+            }
+            &-genero{
+                display: flex;
+                margin-top: 1rem;
+                input{
+                    margin-right: .5rem;
+                }
+                label{
+                    margin-right: .5rem;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
