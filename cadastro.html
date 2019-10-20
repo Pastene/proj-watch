@@ -5,6 +5,41 @@
         <meta name="viewport" content="width=device-width, user-scalable=no">
     </head>
     <body>
+        <header class="headerMobile">
+            <div class="headerMobile_container-navigation">
+                <div class="headerMobile_container-navigation_menu">
+                    <div class="headerMobile_container-navigation_menu-icon menu-abrir">
+                        <input id="menu-hamburguer" type="checkbox">
+                        <label for="menu-hamburguer">
+                            <div class="menu  menu-abrir">
+                                <span class="hamburguer"></span>
+                            </div>
+                        </label>
+                    </div>
+                    <nav class="barra_nav">
+                    <div class="barra_nav-busca-mobile">
+                            <form action="#">
+                                <input type="text" name="busca" id="busca" placeholder="Buscar">
+                            </form>
+                            <img src="src/assets/img/search.svg" alt="Busca">
+                        </div>
+                        <ul class="barra_nav-menu-principal">
+                            <li><a href="index.html" class="barra_nav-menu-principal-item">Home</a></li>
+                            <li><a href="#" class="barra_nav-menu-principal-item">Login</a></li>
+                            <li><a href="#" class="barra_nav-menu-principal-item">Localização</a></li>
+                            <li><a href="#" class="barra_nav-menu-principal-item">About</a></li>
+                            <li><a href="cadastro.html" class="barra_nav-menu-principal-item">Cadastro</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="headerMobile_container-navigation_busca">
+                    <form action="#">
+                        <input type="text" name="busca" id="busca" placeholder="Buscar">
+                    </form>
+                    <img src="src/assets/img/search.svg" alt="Busca">
+                </div>
+            </div>
+        </header>
         <main>
             <div class="container_cadastro">
                 <h1>Cadastro</h1>
@@ -42,5 +77,9 @@
                 </form>
             </div>
         </main>
+        <footer>
+            <script src="https://statjs.akamaized.net/egomes/jquery-1.9.1.min.js"></script>
+            <script src="src/js/menuHeader.js"></script>
+        </footer>
     </body>
 </html>

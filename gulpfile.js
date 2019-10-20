@@ -29,7 +29,8 @@ const js = () => {
 const watch = () => {
 	browserSync.init({ 
 		server: {
-            baseDir: "./"
+            baseDir: "./",
+            index: "login.html"
         }
     });
 
