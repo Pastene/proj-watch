@@ -9,8 +9,6 @@ function menuOpen() {
 	$html.addClass('menu-ativo');
 	$menuOverlay.addClass('menu-overlay');
 	$menuHamburguer.prop('checked', true);
-
-	
 }
 
 function menuClose() {
@@ -20,7 +18,6 @@ function menuClose() {
 	menuIdTimeout = setTimeout(function () {
 		$menuOverlay.removeClass('menu-overlay');
 	}, 300);
-
 }
 
 var menuItem = document.querySelectorAll('.barra_nav-menu-principal-item');

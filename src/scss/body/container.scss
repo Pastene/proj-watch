@@ -6,29 +6,32 @@
     margin: 0 auto;
     &_item{
         margin: 2rem 1rem;
-        cursor: pointer;
         &:nth-child(2n){
             margin-top: 6rem;
         }
-        img{
-            width: 100%;
-        }
-        @media(max-width: 639px){
-            width: 100%;
-            &:nth-child(2n){
-                margin-top: 0;
+        &_link{
+            text-decoration: none;
+            img{
+                width: 100%;
             }
-        }
-        &-descricao{
-            color: #fff;
-            font-size: 1.2rem;
-            text-align: center;
-            margin-top: 10px;
-        }
-        &:hover{
-            .container_item-descricao{
-                text-decoration: underline;
-            }   
+            @media(max-width: 639px){
+                width: 100%;
+                &:nth-child(2n){
+                    margin-top: 0;
+                }
+            }
+            &-descricao{
+                color: #fff;
+                font-size: 1.2rem;
+                text-align: center;
+                margin-top: 10px;
+            }
+            &:hover{
+                color: #fff;
+                .container_item-descricao{
+                    text-decoration: underline;
+                }   
+            }
         }
     }
 }

@@ -5,24 +5,29 @@ const autoprefixer = require("autoprefixer");
 const cssnano = require("cssnano");
 const sourcemaps = require("gulp-sourcemaps");
 const minify = require("gulp-minify");
+const concat = require('gulp-concat');
+const rename = require('gulp-rename');
+const uglify = require('gulp-uglify-es').default;
 const browserSync = require("browser-sync").create();
 
 const style = () => {
     return (
         gulp
-            .src("src/scss/style.scss")
-            .pipe(sourcemaps.init())
-            .pipe(sass())
-            .on("error", sass.logError)
-            .pipe(postcss([autoprefixer(), cssnano()]))
-            .pipe(sourcemaps.write())
-            .pipe(gulp.dest("src/build/css/"))
+        .src("src/scss/style.scss")
+        .pipe(sourcemaps.init())
+        .pipe(sass())
+        .on("error", sass.logError)
+        .pipe(postcss([autoprefixer(), cssnano()]))
+        .pipe(sourcemaps.write())
+        .pipe(gulp.dest("src/build/css/"))
     );
 }
 
 const js = () => {
     gulp.src("src/js/**/*.js")
-    .pipe(minify())
+    .pipe(concat("app.js"))
+    .pipe(rename('app.min.js'))
+    .pipe(uglify())
     .pipe(gulp.dest("src/build/js/"))
 }
 
